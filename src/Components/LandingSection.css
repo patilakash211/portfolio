@@ -1,0 +1,189 @@
+.hero__container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #1B4F3D;
+    color: #fff;
+}
+
+.hero__container__info__parent {
+    width: 45%;
+    min-width: 340px;
+    padding: 10px;
+}
+
+.hero__container__info {
+    min-width: 315px;
+    padding: 20px;
+    border: 1px solid #84CFB5;
+    position: relative;
+    visibility: hidden;
+}
+
+.hero__container__info::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #84CFB5;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.hero__container__info h1 {
+    font-size: 45px;
+}
+
+.hero__container__info h3 {
+    font-size: 32px;
+   
+}
+
+.hero__container__info p {
+    font-size: 20px;
+}
+
+.hero__container__image__parent {
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    min-width: 300px;  
+}
+
+.hero__container__image__parent,
+.hero__container__image,
+.hero__container__info__parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__container__image {
+    width: 60%;
+    height: 120%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero__container__image::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #84CFB5;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.hero__container__image img {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+
+.arrows {
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 20px;
+}
+
+.arrows path {
+    stroke: #84CFB5;
+    fill: transparent;
+    stroke-width: 5px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes arrow {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.arrows path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+}
+
+.arrows path.a2 {
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+}
+
+.arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+}
+
+
+@media screen and (max-width:1000px) {
+    .hero__container__info h1 {
+        font-size: 40px;
+    }
+
+    .hero__container__info h3 {
+        font-size: 28px;
+    }
+
+    .hero__container__info p {
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width:680px) {
+    .hero__container__info h1 {
+        font-size: 35px;
+    }
+
+    .hero__container__info h3 {
+        font-size: 23px;
+    }
+
+    .hero__container__info p {
+        font-size: 15px;
+    }
+
+    .hero__container__info__parent {
+        margin-top: -150px;
+    }
+}

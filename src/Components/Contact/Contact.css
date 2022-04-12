@@ -1,0 +1,163 @@
+.stats__contact {
+    color: #E8E8E8;
+    height: auto;
+    /* background-color: #A8A8A8; */
+    background-color: #1B4F3D;
+    /* min-height: 100vh; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.github {
+    padding: 30px;
+    width: 100%;
+}
+
+.github h1,
+.contact__container h1 {
+    font-size: 28px;
+    margin: 8px;
+    text-align: center;
+}
+
+.github span {
+    color: #E8E8E8;
+}
+
+.github .ContributionCalendar-label {
+    fill: #E8E8E8;
+}
+
+.github>div {
+    width: 70%;
+    margin: auto;
+}
+
+
+.github a {
+    display: none;
+}
+
+.github .library {
+    display: block;
+    font-size: 10px;
+    text-align: center;
+    margin: 30px 10px 20px;
+    color: #E8E8E8;
+}
+
+.contact__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-top: 2px solid #e8e8e862;
+}
+
+.contact__container__details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.contact__container__details>div {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.contact__container__details>div>span {
+    margin-left: 5px;
+}
+
+.contact__container__details__icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contact__container__social {
+    padding: 10px;
+    margin: 5px;
+    font-size: 25px;
+}
+
+.contact__container__social a {
+    display: inline-block;
+    padding: 0px 5px;
+    margin: 5px;
+    color: #E8E8E8;
+}
+
+
+
+.contact__container__details__icon:hover,
+.contact__container__social a:hover {
+    transition: all 0.2s ease;
+    color: #84CFB5;
+}
+
+
+
+@media screen and (max-width:1000px) {
+
+    .github .contrib-number {
+        font-size: 20px
+    }
+
+    .github>div {
+        width: 90%;
+        margin: auto;
+    }
+
+    .github h1,
+    .contact__container h1 {
+        font-size: 25px;
+    }
+
+}
+
+
+@media screen and (max-width:700px) {
+    .github {
+        padding: 30px 25px;
+    }
+
+    .github .contrib-number {
+        font-size: 19px
+    }
+
+    .github>div {
+        width: 100%;
+        margin: auto;
+    }
+
+    .github h1,
+    .contact__container h1 {
+        font-size: 22px;
+    }
+
+}
+
+
+@media screen and (max-width:500px) {
+    .github {
+        padding: 30px 25px;
+    }
+
+    .github .contrib-number {
+        font-size: 17px
+    }
+
+    .github .text-muted {
+        font-size: 10px;
+    }
+
+}

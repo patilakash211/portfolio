@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import "./App.css";
+import { LandingSection } from "./Components/LandingSection";
+import { About } from "./Components/About/About";
+import { Projects } from "./Components/Projects/Projects";
+import { Contact } from "./Components/Contact/Contact";
+import { Navbar } from "./Components/Projects/Navbar";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+export default function App() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
+    return (
+        <div className="App">
+            <div>
+                <Navbar />
+                <LandingSection />
+                <About />
+                <Projects />
+                <Contact />
+            </div>
+        </div>
+    )
 }
-
-export default App;

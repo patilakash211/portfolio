@@ -1,0 +1,453 @@
+.projects__container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.projects__container .project {
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    overflow: hidden;
+    position: relative;
+}
+
+.projects__container .project__text__container__parent {
+    max-width: 50%;
+    padding: 10px;
+    min-width: 310px;
+    position: relative;
+    margin-top: 100px;
+}
+
+.project__text__container {
+    min-width: 100%;
+    position: absolute;
+    /* height: 300px; */
+    width: 450px;
+    top: -300px;
+    z-index: 100;
+    padding: 30px;
+    margin: 10px;
+}
+
+
+
+
+.project__text__container h1 {
+    font-size: 28px;
+    margin: 8px;
+}
+
+.project__text__container p {
+    font-size: 15px;
+    margin: 8px;
+}
+
+.project__button__container button {
+    border: none;
+    margin: 0 8px;
+    font-size: 13px;
+    padding: 10px 12px;
+    border: none;
+    margin: 0 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.project__image__container {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.project__image__container__number {
+    position: absolute;
+    font-size: 130px;
+    bottom: -12%;
+    left: -23%;
+    color: #ffffff91;
+}
+
+.project__image__container__image img {
+    width: 100%;
+    min-width: 310px;
+}
+
+/* Book my show */
+.project__container__scroll__arrow {
+    position: absolute;
+    right: 5%;
+    margin-left: -30px;
+    bottom: 50px;
+    transform: rotateZ(270deg);
+}
+
+.Project__container__arrows {
+    width: 60px;
+    height: 72px;
+}
+
+.Project__container__arrows path {
+    stroke: #ffffff91;
+    fill: transparent;
+    stroke-width: 5px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes arrow {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 1
+    }
+
+    80% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.Project__container__arrows path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+}
+
+.Project__container__arrows path.a2 {
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+}
+
+.Project__container__arrows path.a3 {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+}
+
+.projects__container__bookmyshow {
+    background-color: #C4242B;
+}
+
+.projects__container__bookmyshow .project__text__container {
+    background-color: #333545;
+}
+
+.projects__container__bookmyshow .project__text__container h1 {
+    color: white;
+}
+
+.projects__container__bookmyshow .project__text__container p {
+    color: #e7e7e7;
+}
+
+.projects__container__bookmyshow .project__button__container button {
+    color: white;
+    background-color: #C4242B;
+}
+
+
+.projects__container__bookmyshow .project__image__container__number {
+    color: #ffffff91;
+}
+
+
+/* Chat karo */
+
+.projects_container_chatApplication {
+    background-color: #C05C3C;
+}
+
+.projects_container_chatApplication .project__text__container {
+    background-color: #333545;
+}
+
+.projects_container_chatApplication .project__text__container h1 {
+    color: white;
+}
+
+.projects_container_chatApplication .project__text__container p {
+    color: #e7e7e7;
+}
+
+.projects_container_chatApplication .project__button__container button
+{
+    color: white;
+    background-color: #C05C3C;
+}
+
+
+/* Sudoku*/
+
+.projects__container__sudoku {
+    background-color: #97001F;
+}
+
+.projects__container__sudoku .project__text__container {
+    background-color: #D0BC9D;
+}
+
+.projects__container__sudoku .project__text__container h1 {
+    color: black;
+}
+
+.projects__container__sudoku .project__text__container p {
+    color: #353535;
+}
+
+.projects__container__sudoku .project__button__container button {
+    color: white;
+    background-color: #97001F;
+}
+
+/* Meetup*/
+
+.projects__container__meetup {
+    background-color: #4B5764;
+}
+
+.projects__container__meetup .project__text__container {
+    background-color: #94BAD5;
+}
+
+.projects__container__meetup .project__text__container h1 {
+    color: black;
+}
+
+.projects__container__meetup .project__text__container p {
+    color: #353535;
+}
+
+.projects__container__meetup .project__button__container button {
+    color: #4B5764;
+    background-color: white;
+}
+
+.projects__container__meetup .project__container__scroll__arrow {
+    transform: rotateZ(0deg);
+    bottom: 20px;
+    /* right: ; */
+    left: 50%;
+}
+
+
+
+
+/* .project__image__container:hover {
+    z-index: 200;
+} */
+
+.projects__container__bookmyshow .project__button__container button:hover {
+    background-color: #dd3e46;
+}
+
+.projects__container__chatApplication .project__button__container button:hover {
+    background-color: #d17151;
+}
+
+.projects__container__sudoku .project__button__container button:hover {
+    background-color: #b11f3c;
+}
+
+.projects__container__meetup .project__button__container button:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+
+
+@media screen and (max-width:1000px) {
+    .project__text__container {
+        min-width: 100%;
+        width: 350px;
+        top: -310px;
+        padding: 20px;
+        margin: 40px;
+        margin-left: -70px;
+
+    }
+
+    .project__text__container h1 {
+        font-size: 25px;
+    }
+
+    .project__text__container p {
+        font-size: 14px;
+    }
+
+    .project__button__container button {
+        font-size: 12px;
+        font-weight: 500; 
+    }
+
+    .project__image__container__number {
+        position: absolute;
+        font-size: 100px;
+        bottom: -12%;
+        left: -26%;
+        color: #ffffff91;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .project__text__container {
+        min-width: 100%;
+        /* height: 280px; */
+        width: 300px;
+        top: -280px;
+        padding: 15px;
+        margin: 5px;
+    }
+
+    .project__text__container h1 {
+        font-size: 22px;
+    }
+
+    .project__text__container p {
+        font-size: 13px;
+    }
+
+    .project__button__container button {
+        font-size: 11.5px;
+        font-weight: 400;
+    }
+
+    .project__image__container__number {
+        position: absolute;
+        font-size: 70px;
+        bottom: -12%;
+        left: -26%;
+        color: #ffffff91;
+    }
+
+    .project__image__container {
+        max-width: 53%;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    .projects__container .project {
+        min-width: 100vw;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .projects__container .project__text__container__parent {
+        min-width: 80%;
+        position: relative;
+        padding: 0;
+    }
+
+    .project__text__container {
+        width: 100%;
+        position: initial;
+        /* height: 205px; */
+        max-width: 500px;
+        margin: 0;
+    }
+
+    .project__image__container {
+        min-width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: all 0.2s ease;
+        cursor: pointer;
+    }
+
+    .project__image__container__number {
+        position: absolute;
+        font-size: 100px;
+        bottom: -12%;
+        left: 0%;
+    }
+
+    .projects__container__bookmyshow .project__image__container__number {
+        color: #c4242c91;
+    }
+
+    .projects__container__chatApplication .project__image__container__number {
+        color: #C05C3C91;
+    }
+
+    .projects__container__sudoku .project__image__container__number {
+        color: #97001F91;
+    }
+
+    .projects__container__meetup .project__image__container__number {
+        color: #4B576491;
+    }
+
+    .project__image__container__image img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .project__image__container__image a {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .project__text__container {
+        height: fit-content;
+        max-width: 500px;
+    }
+
+    .project__image__container__number {
+        position: absolute;
+        font-size: 60px;
+        bottom: -8%;
+        left: 0%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .projects__container .project__text__container__parent {
+        min-width: 100%;
+    }
+
+    .project__image__container {
+        min-width: 100%;
+    }
+
+    .project__text__container {
+        height: fit-content;
+        max-width: 500px;
+    }
+}
