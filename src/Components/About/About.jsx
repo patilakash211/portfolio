@@ -90,7 +90,7 @@ export const About = () => {
             ease: Power3.easeOut,
             delay: -0.5
         })
-    }, [])
+    })
 
     return (
         <div>
