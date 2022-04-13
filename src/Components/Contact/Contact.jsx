@@ -29,7 +29,7 @@ export const Contact = () => {
                 </div>
                 <div className="contact__container__social">
                     <a target="_blank" rel="noreferrer" href="https://github.com/patilakash211"><IoLogoGithub /></a>
-                    <a target="_blank" rel="noreferrer" href="www.linkedin.com/in/patilakash211"><IoLogoLinkedin /></a>
+                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/patilakash211/"><IoLogoLinkedin /></a>
                 </div>
                 <div className="design-name">
                     Designed by :- Naeem Shaik
