@@ -101,7 +101,7 @@ export const About = () => {
                         <br /><br />
                         Actively seeking opportunities to be able to apply my skill set to create exciting products.
                     </p>
-                    <a href="https://drive.google.com/file/d/19rGMEAK9LLdrxmzX1SX9ywal24vw15_W/view?usp=sharing" download >
+                    <a target="_blank" href="https://drive.google.com/file/d/19rGMEAK9LLdrxmzX1SX9ywal24vw15_W/view?usp=sharing" download >
                         
                         <button>Download Resume</button>
                     </a>
